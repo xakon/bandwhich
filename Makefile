@@ -44,7 +44,7 @@ uninstall_autocomplete:
 	rm -f $(AUTOCOMPLETE_DST)/bandwhich
 
 install: install_autocomplete
-	install -Dm755 $(BIN) $(BIN_DST)
+	install -Dm755 -s $(BIN) $(BIN_DST)
 	install -Dm644 docs/bandwhich.1 $(DOC_DST)
 	install -Dm644 LICENSE.md $(LIC_DST)/LICENSE
 
